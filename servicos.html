@@ -642,6 +642,20 @@ btnSalvarAddon.addEventListener("click", async () => {
 
   };
 
+  window.toggleAddon = async function (id, ativo) {
+
+    await supabase
+      .from("service_addons")
+      .update({
+        active: !ativo
+      })
+      .eq("id", id)
+      .eq("user_id", user.id);
+  
+    carregarAddons();
+  
+  };
+
 // MOSTRAR / OCULTAR DESCRIÇÃO
 window.toggleDescricao = function(id) {
 
@@ -734,6 +748,23 @@ window.salvarDescricao = async function(id) {
 
     carregarServicos();
 
+  };
+
+  window.deletarAddon = async function (id) {
+
+    const confirmar =
+      confirm("Excluir adicional?");
+  
+    if (!confirmar) return;
+  
+    await supabase
+      .from("service_addons")
+      .delete()
+      .eq("id", id)
+      .eq("user_id", user.id);
+  
+    carregarAddons();
+  
   };
 
   // RODAR O ESCARALHAMENTO(START dos serviços) KKKKK
