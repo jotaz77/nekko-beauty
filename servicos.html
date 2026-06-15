@@ -481,7 +481,7 @@ async function carregarAddons() {
       <div class="flex gap-2">
     
         <button
-          onclick="toggleAddon(${addon.id}, ${addon.active})"
+          onclick="toggleAddon('${addon.id}', ${addon.active})"
           class="
             px-4
             py-2
@@ -495,7 +495,7 @@ async function carregarAddons() {
         </button>
     
         <button
-          onclick="deletarAddon(${addon.id})"
+          onclick="deletarAddon('${addon.id}')"
           class="
             px-4
             py-2
