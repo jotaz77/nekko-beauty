@@ -14,60 +14,60 @@
 <body class="min-h-screen flex items-center justify-center p-4 bg-[#d1d1d1] text-[#45433f]">
   <main class="w-full max-w-md rounded-2xl border border-[#545454] bg-[#ffffff] p-7 sm:p-9 shadow-xl shadow-[#545454]/30">
     <div class="mb-8 text-center">
-      <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl border border-[#ded5c7] bg-[#eee7dc] shadow-sm" aria-hidden="true">
+      <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl border border-[#bdbdbd] bg-[#e0e0e0] shadow-sm" aria-hidden="true">
         <img src="img/estetika.png" alt="" class="h-full w-full object-contain" onerror="this.style.display='none'">
       </div>
-      <h1 class="text-2xl font-bold tracking-tight text-[#393833]">Bem-vindo de volta</h1>
-      <p class="mt-2 text-sm text-[#817b71]">Entre com seus dados para continuar.</p>
+      <h1 class="text-2xl font-bold tracking-tight text-[#393939]">Bem-vindo de volta</h1>
+      <p class="mt-2 text-sm text-[#707070]">Entre com seus dados para continuar.</p>
     </div>
 
     <div class="space-y-4">
       <div>
-        <label for="email" class="mb-1.5 block text-sm font-medium text-[#555149]">E-mail</label>
+        <label for="email" class="mb-1.5 block text-sm font-medium text-[#555555]">E-mail</label>
         <input
           id="email"
           type="email"
           placeholder="voce@exemplo.com"
           autocomplete="email"
-          class="w-full rounded-xl border border-[#d8d0c3] bg-white px-4 py-3 text-[#393833] placeholder:text-[#aaa398] outline-none transition focus:border-[#aa987b] focus:ring-4 focus:ring-[#e9e0d2]"
+          class="w-full rounded-xl border border-[#bdbdbd] bg-white px-4 py-3 text-[#393939] placeholder:text-[#929292] outline-none transition focus:border-[#666666] focus:ring-4 focus:ring-[#e0e0e0]"
         >
       </div>
 
       <div>
-        <label for="password" class="mb-1.5 block text-sm font-medium text-[#555149]">Senha</label>
+        <label for="password" class="mb-1.5 block text-sm font-medium text-[#555555]">Senha</label>
         <input
           id="password"
           type="password"
           placeholder="Digite sua senha"
           autocomplete="current-password"
-          class="w-full rounded-xl border border-[#d8d0c3] bg-white px-4 py-3 text-[#393833] placeholder:text-[#aaa398] outline-none transition focus:border-[#aa987b] focus:ring-4 focus:ring-[#e9e0d2]"
+          class="w-full rounded-xl border border-[#bdbdbd] bg-white px-4 py-3 text-[#393939] placeholder:text-[#929292] outline-none transition focus:border-[#666666] focus:ring-4 focus:ring-[#e0e0e0]"
         >
       </div>
 
       <button
         id="btnLogin"
         type="button"
-        class="w-full rounded-xl bg-[#a9977b] py-3 font-semibold text-white shadow-md shadow-[#c7b9a4]/40 transition duration-200 hover:bg-[#8f7d63] focus:outline-none focus:ring-4 focus:ring-[#e8dfd1]"
+        class="w-full rounded-xl bg-[#666666] py-3 font-semibold text-white shadow-md shadow-[#545454]/30 transition duration-200 hover:bg-[#4d4d4d] focus:outline-none focus:ring-4 focus:ring-[#d1d1d1]"
       >
         Entrar
       </button>
 
       <div class="flex items-center gap-3 py-1" aria-hidden="true">
-        <div class="h-px flex-1 bg-[#e5ded3]"></div>
-        <span class="text-xs text-[#a39a8c]">AINDA NÃO TEM CONTA?</span>
-        <div class="h-px flex-1 bg-[#e5ded3]"></div>
+        <div class="h-px flex-1 bg-[#c9c9c9]"></div>
+        <span class="text-xs text-[#777777]">AINDA NÃO TEM CONTA?</span>
+        <div class="h-px flex-1 bg-[#c9c9c9]"></div>
       </div>
 
       <button
         id="btnSignup"
         type="button"
-        class="w-full rounded-xl border border-[#d8d0c3] bg-[#f4f0e9] py-3 font-semibold text-[#555149] transition duration-200 hover:border-[#b8aa96] hover:bg-[#eee7dc] focus:outline-none focus:ring-4 focus:ring-[#e9e0d2]"
+        class="w-full rounded-xl border border-[#666666] bg-[#e0e0e0] py-3 font-semibold text-[#45433f] transition duration-200 hover:border-[#545454] hover:bg-[#d1d1d1] focus:outline-none focus:ring-4 focus:ring-[#e0e0e0]"
       >
         Criar conta
       </button>
     </div>
 
-    <p id="msg" role="status" aria-live="polite" class="mt-5 min-h-[20px] text-center text-sm text-[#716b61]"></p>
+    <p id="msg" role="status" aria-live="polite" class="mt-5 min-h-[20px] text-center text-sm text-[#666666]"></p>
   </main>
 
   <script>
@@ -87,7 +87,7 @@
       const password = document.getElementById("password").value;
 
       msg.className =
-        "text-center text-sm mt-4 text-[#8f7d63] min-h-[20px]";
+        "text-center text-sm mt-4 text-[#555555] min-h-[20px]";
 
       msg.innerText = "Entrando...";
 
@@ -118,7 +118,7 @@
       }
 
       msg.className =
-        "text-center text-sm mt-4 text-[#8f7d63] min-h-[20px]";
+        "text-center text-sm mt-4 text-[#555555] min-h-[20px]";
 
       msg.innerText = "Criando conta...";
 
